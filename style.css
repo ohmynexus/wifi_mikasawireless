@@ -1,0 +1,144 @@
+:root{--wine:#681d2d;--red:#a52c43;--rose:#d85c6e;--ink:#281a1e;--paper:#fffaf8;--muted:#8d777b;--line:#ead9d9;--lime:#adff36}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px system-ui;padding-bottom:100px}header{position:sticky;top:0;z-index:4;background:var(--wine);color:white;padding:12px 18px;display:flex;justify-content:space-between;align-items:center}header small{display:block;font-size:9px;letter-spacing:.15em;color:#e7b7c1}button{cursor:pointer;font:inherit}header button{background:none;border:0;color:white;font-size:24px;min-width:44px;min-height:44px}main{max-width:960px;width:calc(100% - 28px);margin:auto}.hero{margin:18px 0;background:linear-gradient(100deg,#210810eF 0%,#5a1428d9 56%,#290c17c4 100%),url("mikasa-art.jpg") center 38%/cover;border:1px solid #9b394d;border-radius:20px;padding:28px 24px;color:white;min-height:225px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;box-shadow:0 10px 32px #35101d36}.hero-copy{position:relative;z-index:2}.hero small{letter-spacing:.17em;color:#ffabb9;font-weight:bold}.hero h1{font-size:clamp(31px,7vw,49px);line-height:.99;letter-spacing:-.04em;margin:10px 0}.hero em{font-style:normal;color:#ff405a;text-shadow:0 0 18px #ff234455}.hero p{font-size:13px;color:#ffe3e7}.signature{font-size:9px;letter-spacing:.14em;color:#dba6b0}.hero-art{display:none}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.stats article,.panel,.person{background:white;border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 6px 20px #40132309}.stats small{display:block;color:var(--muted);font-size:11px}.stats b{display:block;font-size:clamp(19px,4vw,26px);overflow-wrap:anywhere;margin-top:4px}.stats .lime{background:#f1ffdf;border-color:#c7ec92}.lime b{color:#466a12}.panel{margin:13px 0 23px}.panel h2{margin:0;font-size:19px}.panel h3{font-size:13px;margin-bottom:8px}.chart{height:135px;display:grid;grid-template-columns:repeat(6,1fr);gap:9px;align-items:end;padding:12px 0}.month{display:flex;flex-direction:column;justify-content:end;align-items:center;gap:5px;height:100%}.bar{height:90px;width:65%;background:#f6e9eb;display:flex;align-items:end;border-radius:7px 7px 0 0;overflow:hidden}.bar i{display:block;background:linear-gradient(#d85c6e,#681d2d);width:100%}.month small{font-size:10px;color:var(--muted)}.month b{font-size:9px;color:var(--wine)}.track{display:flex;height:12px;border-radius:20px;background:#f1e4e6;overflow:hidden;margin:10px 0}.track i{display:block;background:var(--lime);width:0}h2{font-size:20px}section>h2 small{font-size:11px;color:var(--muted)}input,textarea{font:16px system-ui;border:1px solid #dec9cd;border-radius:10px;padding:12px;width:100%;background:white;color:var(--ink);margin-top:5px}#search{margin:0 0 12px}.person{display:flex;align-items:center;gap:10px;margin:8px 0;cursor:pointer}.avatar{background:#f6e7e9;color:var(--wine);border-radius:12px;width:42px;height:42px;display:grid;place-items:center;font-weight:bold}.pname{flex:1;min-width:0}.pname b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pname small,.balance small{font-size:10px;color:var(--muted)}.balance{text-align:right}.balance b{display:block;font-size:13px;color:var(--wine)}aside{background:#f5e9e9;padding:13px;border-left:3px solid var(--rose);font-size:11px;color:var(--muted)}.fab{position:fixed;z-index:10;right:20px;bottom:max(20px,env(safe-area-inset-bottom));height:62px;width:62px;border-radius:50%;border:0;background:var(--lime);color:#273c0b;font-size:39px;box-shadow:0 7px 25px #2223}.dialog,dialog{border:0;border-radius:20px;padding:0;width:min(460px,calc(100vw - 22px));max-height:calc(100dvh - 20px);overflow:auto;background:var(--paper);color:var(--ink);box-shadow:0 20px 70px #220b1b77}dialog::backdrop{background:#210c17aa;backdrop-filter:blur(3px)}dialog form,#details{padding:20px}dialog h2{margin:0 0 18px}.x{float:right;border:0;border-radius:50%;width:42px;height:42px;font-size:24px;background:#f0dfe2;color:var(--wine);margin-left:10px}label{display:block;font-size:12px;font-weight:700;margin:0 0 13px}label small{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:6px}.primary{width:100%;min-height:49px;border:0;border-radius:11px;background:var(--wine);color:white;font-weight:bold}.err{color:#b4233a;font-size:12px}.profile{display:flex;justify-content:space-between;gap:12px}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:14px 0}.metrics div{background:white;border:1px solid var(--line);padding:10px;border-radius:9px}.metrics small{display:block;color:var(--muted);font-size:10px}.metrics b{font-size:14px}.actions{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.actions button,.txops button,#drawer button{border:1px solid var(--line);background:white;color:var(--wine);border-radius:9px;padding:11px;font-size:12px;font-weight:bold}.record{border-top:1px solid var(--line);padding:12px 0}.record small{display:block;color:var(--muted);font-size:11px}.recordhead{display:flex;justify-content:space-between;gap:10px;font-size:13px}.txops{display:flex;gap:7px;margin-top:7px;flex-wrap:wrap}.tag{font-size:9px;background:#f2e5e7;padding:3px 5px;border-radius:5px}.empty{text-align:center;padding:24px;color:var(--muted);border:1px dashed var(--line);border-radius:12px;font-size:13px}#drawer{position:fixed;z-index:30;right:0;top:0;height:100dvh;width:min(340px,88vw);background:var(--paper);padding:24px;box-shadow:-10px 0 40px #0002}#drawer button{display:block;width:100%;margin:8px 0;text-align:left}#shade{position:fixed;inset:0;background:#1a071488;z-index:29}.hidden{display:none!important}#drawer p{font-size:11px;color:var(--muted)}#toast{position:fixed;z-index:60;bottom:95px;left:50%;transform:translateX(-50%);background:#291b20;color:white;border-radius:10px;padding:12px 16px;display:none;font-size:12px;max-width:90%}#toast.on{display:block}@media(min-width:700px){.stats{grid-template-columns:repeat(4,1fr)}#list{display:grid;grid-template-columns:1fr 1fr;gap:6px}.hero{padding:34px}}
+/* Mikasa-inspired visual treatment and robust Android modal presentation */
+.panel{background:linear-gradient(145deg,#fff 55%,#fff4f4);border-color:#e6c4cb}
+.person{border-color:#e4c7cd;box-shadow:0 4px 16px #4b0c1c0a}
+.person:active{border-color:#b63a51;background:#fff5f6}
+.fab{background:radial-gradient(circle at 34% 27%,#e1ffb1 0%,#aaff38 52%,#67c80e 100%);border:2px solid #e3ffbd;box-shadow:0 0 0 5px #9bff3220,0 0 25px #78ff37a0,0 8px 24px #240b1c55}
+dialog{z-index:1000;position:fixed;inset:0;margin:auto}
+dialog[open]{display:block;animation:modal-in .16s ease-out}
+@keyframes modal-in{from{opacity:.6;transform:translateY(12px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+dialog::backdrop{background:rgba(14,3,9,.83);backdrop-filter:blur(5px)}
+.form-art{margin:-20px -20px 20px;padding:23px 20px 19px;background:linear-gradient(100deg,#270a16df,#60162cd9),url("mikasa-art.jpg") center 42%/cover;border-bottom:2px solid #c3314d;color:#fff;border-radius:20px 20px 0 0;min-height:112px}
+.form-art small{letter-spacing:.14em;color:#ffa3b1;font-size:9px}
+.form-art h2{font-size:24px;margin:8px 0 3px;color:white}
+.form-art p{font-size:11px;color:#f3c6ce;margin:0}
+label{color:#48212a}
+.primary{background:linear-gradient(100deg,#921d38,#c72b49);box-shadow:0 5px 15px #981a3533}
+.primary:active{transform:translateY(1px)}
+.x{font-size:27px;line-height:1}
+@media(min-width:700px){.hero{min-height:275px;padding:35px}.hero-art{display:block;position:absolute;inset:0 0 0 44%;background:linear-gradient(90deg,#40101c00,#3b0c1a20),url("mikasa-art.jpg") center 36%/cover;opacity:.83;mask-image:linear-gradient(90deg,transparent,black 26%)}}
+@media(max-width:420px){.hero{padding:22px 17px;min-height:200px;background-position:58% center}.hero h1{font-size:34px}.form-art{margin:-18px -18px 18px;padding:20px 18px}.dialog form{padding:18px}}
+
+/* Visual correction v1.2 — consistent anime field-ledger styling */
+:root{--wine:#5d1528;--red:#bd2344;--rose:#ff526f;--ink:#fff2f5;--paper:#160e12;--muted:#b995a0;--line:#56313c;--lime:#b8ff43}
+body{background:radial-gradient(ellipse at 88% 10%,#3b1422 0%,#1a1015 40%,#110d10 100%);color:var(--ink)}
+header{background:linear-gradient(100deg,#541322,#7b1c32 60%,#4b1224);border-bottom:1px solid #a43b52;box-shadow:0 6px 24px #08050880}
+.hero{border-color:#b74660;box-shadow:0 10px 35px #0006}
+.stats article,.panel,.person{background:linear-gradient(145deg,#25161d,#171115 78%);border:1px solid #593a45;box-shadow:inset 0 1px #ffffff09,0 8px 20px #0003}
+.stats small,.month small,.pname small,.balance small,section>h2 small{color:#ba9ca6}
+.stats b{color:#fff4f6}
+.stats .lime{background:linear-gradient(140deg,#26340d,#151c0b);border-color:#54682b}
+.lime b{color:#c5ff77}
+.panel h2,.panel h3{color:#fff0f4}
+.bar{background:#412832;border:1px solid #6a3c4b}
+.bar i{background:linear-gradient(#ff7087,#9f1836);box-shadow:0 0 14px #ff3d6233}
+.track{background:#432832;border:1px solid #68404b}
+.track i{background:linear-gradient(90deg,#a8f63a,#e0ff91)}
+input,textarea{background:#21151a;color:#fff1f4;border-color:#68424e}
+input::placeholder,textarea::placeholder{color:#a98d97}
+.person{border-color:#563440}
+.person:active{border-color:#ed4966;background:#351823}
+.avatar{background:linear-gradient(140deg,#6d1a31,#31121e);color:#ffb2c0;border:1px solid #944257}
+.balance b{color:#ff9bad}
+aside{background:linear-gradient(90deg,#321720,#24151b);border-left:4px solid #ef4867;color:#c9aeb7}
+.empty{border-color:#5c3c47;color:#c3a6b0;background:#21151a}
+#fab,.fab{position:fixed;z-index:100;right:20px;left:auto;bottom:max(24px,calc(env(safe-area-inset-bottom) + 18px));height:62px;width:62px;border-radius:50%;border:2px solid #e7ffbc;background:radial-gradient(circle at 34% 25%,#eaffbf,#b5ff3c 50%,#62c60a);color:#213605;font-size:39px;line-height:1;display:grid;place-items:center;box-shadow:0 0 0 5px #a9ff3220,0 0 27px #8cff4a99,0 8px 25px #0009}
+dialog{background:#1c1116;color:#fff1f4;border:1px solid #754151}
+dialog form,#details{background:linear-gradient(160deg,#24151b,#140f12)}
+label{color:#f1d9e0}
+label small{color:#c5a9b2}
+.metrics div{background:#2a1920;border-color:#5a3743}
+.record{border-color:#543440}
+.actions button,.txops button,#drawer button{background:#2a1920;color:#ffc1cc;border-color:#68414e}
+.tag{background:#542435;color:#ffc4ce}
+#drawer{background:#1b1116;color:#fff1f4}
+#toast{background:#5e152a;border:1px solid #b8405a}
+@media(min-width:700px){.stats article:hover,.person:hover{border-color:#b7445e;transform:translateY(-1px)}}
+
+/* v1.3 — Survey Corps game HUD: rich illustrated surfaces, not a flat dashboard */
+:root{--corps:#e83b5b;--gold:#f3cc87;--mist:#f6c7d1}
+body{background-color:#10070d;background-image:radial-gradient(ellipse at 50% -15%,#7e1c38 0,transparent 40%),radial-gradient(ellipse at 100% 62%,#35101f 0,transparent 36%),linear-gradient(180deg,#16080f,#0d090d 75%);background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.13;background-image:repeating-linear-gradient(135deg,transparent 0 34px,#f6bdcc 35px,transparent 36px 68px);mask-image:linear-gradient(180deg,#000,transparent 72%)}
+header{background:linear-gradient(90deg,#260913,#76172e 40%,#3b0b1a);border-bottom:2px solid #c84a63;position:sticky}
+header b{letter-spacing:.025em;text-shadow:0 2px 12px #ff426255}
+.hero{min-height:254px;border:1px solid #e15a77;border-radius:8px 26px 8px 26px;background-image:linear-gradient(90deg,#21050cf5 0%,#4d0d21db 46%,#39091690 100%),url("mikasa-art.jpg");box-shadow:0 0 0 4px #58132755,inset 0 0 35px #ff45671c,0 18px 40px #0008}
+.hero:after{content:"SURVEY CORPS  /  FIELD ARCHIVE";position:absolute;right:14px;bottom:12px;color:#ffd1d9;font-size:8px;letter-spacing:.17em;border:1px solid #df718755;padding:6px 9px;transform:skew(-8deg)}
+.hero-copy:before{content:"✦  SPECIAL OPERATIONS";display:inline-block;color:#ffd68f;font-size:9px;letter-spacing:.14em;border:1px solid #bd7a5866;padding:6px 9px;margin-bottom:12px;background:#16080c8c}
+.hero h1{font-weight:900;text-shadow:0 3px 0 #420919,0 0 25px #ed2c5144}
+.stats{gap:11px}
+.stats article{position:relative;isolation:isolate;min-height:114px;padding:16px 14px 13px;border-radius:6px 19px 6px 19px;overflow:hidden;border:1px solid #995063;background:linear-gradient(125deg,#32111fef,#180e15f4 68%),url("mikasa-art.jpg") 72% 30%/cover;box-shadow:inset 0 0 0 1px #ffffff08,0 9px 24px #0006}
+.stats article:before{content:"";position:absolute;z-index:-1;right:-10px;bottom:-18px;width:90px;height:90px;border:1px solid #d95c764d;transform:rotate(45deg);box-shadow:0 0 0 9px #e8496410,0 0 0 20px #e849640a}
+.stats article:after{content:"FIELD DATA";position:absolute;right:10px;top:9px;font-size:7px;letter-spacing:.12em;color:#e6a2b1;opacity:.7}
+.stats article:nth-child(2){background:linear-gradient(125deg,#301522ed,#130e15f5 70%),url("mikasa-art.jpg") center/cover;border-color:#8b5265}
+.stats article:nth-child(3){background:linear-gradient(125deg,#23320bee,#10170ff5 75%),url("mikasa-art.jpg") 80%/cover;border-color:#8fa94c}
+.stats article:nth-child(4){background:linear-gradient(125deg,#291622ee,#100c13f5 75%),url("mikasa-art.jpg") 65%/cover;border-color:#9a5268}
+.stats small{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#e6aebb}
+.stats b{font-size:clamp(20px,5vw,27px);text-shadow:0 2px 10px #ff47612b}
+.panel{position:relative;overflow:hidden;border-radius:8px 23px 8px 23px;padding:17px 15px;border:1px solid #995065;background:linear-gradient(150deg,#2b101beF,#130d13f5 70%),url("mikasa-art.jpg") center 43%/cover;box-shadow:inset 0 0 25px #e42f4e0c,0 12px 28px #0006}
+.panel:before{content:"TACTICAL REPORT   •   LIVE RECORD";display:block;color:#e5a4b2;font-size:8px;letter-spacing:.17em;margin-bottom:10px}
+.panel h2{font-size:20px;letter-spacing:-.025em}
+.panel h2:before{content:"▰ ";color:var(--corps)}
+.panel h3{margin-top:12px;text-transform:uppercase;letter-spacing:.09em;color:#f0c4ce;font-size:11px}
+.chart{height:154px;border-bottom:1px solid #b54d654c;background:linear-gradient(180deg,#d8335010 1px,transparent 1px);background-size:100% 28px}
+.month{position:relative}.bar{width:72%;border:1px solid #945366;background:linear-gradient(180deg,#61263a,#29131e);border-radius:5px 5px 0 0;box-shadow:inset 0 0 14px #e3405818}.bar i{background:linear-gradient(180deg,#ffd18a 0%,#f54b6b 45%,#86152f 100%);box-shadow:0 0 16px #ff36564d}
+.month small{text-transform:uppercase;letter-spacing:.06em;font-size:9px}.month b{color:#ffcb9b}
+.track{height:15px;border-radius:3px;border:1px solid #945367;background:#1a0b12}.track i{background:linear-gradient(90deg,#f5c77f,#ef3d60 65%,#a00e32);box-shadow:0 0 12px #f03d5a88}
+section>h2{display:flex;align-items:baseline;gap:9px;text-transform:uppercase;letter-spacing:.015em;font-weight:850;text-shadow:0 2px 10px #e32e4c22}
+section>h2:before{content:"✦";color:#f3bd77;font-size:17px}
+#search{border-radius:6px 16px 6px 16px;background:linear-gradient(100deg,#29121c,#140d13);border:1px solid #995065;box-shadow:inset 0 0 0 1px #ffffff07;padding:15px;color:#fff2f5}
+.person{position:relative;border-radius:6px 17px 6px 17px;padding:12px;border:1px solid #784052;background:linear-gradient(110deg,#321421ef,#160e15f7 72%),url("mikasa-art.jpg") 70% 40%/cover;box-shadow:inset 3px 0 #b52e4a,0 7px 19px #0005;min-height:72px}
+.person:after{content:"›";font-size:27px;line-height:1;color:#d76d83}
+.avatar{flex:0 0 45px;width:45px;height:45px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#8b2c47,#270c19);border:1px solid #d67b8d;color:#ffdfbd;box-shadow:0 0 0 3px #a52b421c;font-size:17px}
+.pname b{font-size:14px;color:#fff0f4}.pname small{color:#c69eaa}.balance b{color:#ffd18b;font-size:14px}.balance small{color:#e49eaf}
+.empty{background:linear-gradient(135deg,#2a101a,#150d13);border:1px dashed #a34d63;border-radius:8px 18px 8px 18px;color:#e2a9b8}
+aside{margin-top:18px;border:1px solid #693042;border-left:4px solid #e33c5b;background:linear-gradient(110deg,#2c101a,#170d13);color:#d4a9b4;border-radius:0 12px 12px 0}
+.fab,#fab{width:68px;height:68px;right:18px;bottom:max(22px,calc(env(safe-area-inset-bottom) + 18px));background:radial-gradient(circle at 33% 24%,#f2ffd2,#aaff30 42%,#4d9e0a 100%);border:2px solid #eaffb8;color:#173103;font-size:43px;box-shadow:0 0 0 5px #b5ff3322,0 0 36px #8bff4eb0,0 9px 26px #000b;transition:transform .16s}
+.fab:active{transform:scale(.92)}
+dialog{border:1px solid #d0647c;border-radius:8px 23px 8px 23px;box-shadow:0 0 0 4px #64152a70,0 30px 100px #000c}
+.form-art{background-image:linear-gradient(90deg,#20050df2,#591229e0 55%,#340916ad),url("mikasa-art.jpg");border-bottom:2px solid #f14a69;border-radius:8px 22px 0 0}
+.primary{border-radius:5px 15px 5px 15px;background:linear-gradient(100deg,#7f122c,#e12c50 70%,#a81737);border:1px solid #ff8297;box-shadow:0 0 0 3px #f3375418,0 7px 22px #e2294b35;text-transform:uppercase;letter-spacing:.035em}
+input,textarea{border-radius:5px 13px 5px 13px;border-color:#885064;box-shadow:inset 0 0 12px #e12c4a0a}
+.x{background:#50162a;color:#ffbdc9;border:1px solid #c44c67}
+@media(min-width:700px){.stats article{min-height:132px}.person:hover{transform:translateY(-2px);box-shadow:inset 3px 0 #e74562,0 10px 25px #0008}}
+
+
+/* v1.7 — Anime interface polish: manga panels, dossier labels, animated accents */
+:root{--anime-glow:#ff5577;--anime-paper:#f8d5df;--anime-gold:#f7cf8c}
+main{max-width:980px}
+header{backdrop-filter:blur(14px);padding-top:max(12px,env(safe-area-inset-top));}
+header b{display:flex;flex-direction:column;gap:3px}
+header b small{font-size:8px;letter-spacing:.22em;color:#ffb7c6}
+.hero{isolation:isolate;overflow:hidden;background-position:center,center 36%;background-size:auto,cover}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:repeating-linear-gradient(0deg,transparent 0 5px,#ffcfda08 6px 7px),linear-gradient(120deg,transparent 55%,#fa456b16)}
+.hero .signature{display:inline-block;margin-top:12px;padding:7px 10px;border-left:2px solid var(--anime-gold);background:#17060b99;color:#ffe0e6;font-size:9px;letter-spacing:.11em}
+.stats article,.panel,.person{backdrop-filter:blur(7px)}
+.stats article{transition:border-color .2s,transform .2s}
+.stats article small{display:block;max-width:75%}
+.panel{background-image:linear-gradient(150deg,#2b101beF,#130d13f5 70%),url("mikasa-art.jpg");background-position:center,70% 43%;background-size:auto,cover}
+section>h2{position:relative}
+section>h2 small{font-size:10px;letter-spacing:.08em;border:1px solid #8d455a;padding:4px 7px;border-radius:2px}
+#list{display:grid;gap:9px;margin-top:10px}
+.person{transition:transform .18s,border-color .18s,box-shadow .18s}
+.person:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #ff91a7;outline-offset:3px}
+.person .balance{min-width:0}
+.person .balance b{overflow-wrap:anywhere}
+dialog{max-width:min(540px,calc(100% - 24px));max-height:calc(100dvh - 28px);overflow:auto}
+dialog::backdrop{background:#080309c9;backdrop-filter:blur(6px)}
+#details .profile{background:linear-gradient(110deg,#37101e,#170d13),url("mikasa-art.jpg") right 32%/cover;border-bottom:1px solid #b94460}
+#details h3{letter-spacing:.1em}
+.record{background:linear-gradient(110deg,#25121a,#140d12);border-radius:5px 14px 5px 14px}
+#drawer{border-left:1px solid #9e3d56;box-shadow:-25px 0 70px #0009}
+#drawer h2{color:#ffe3e9}
+#drawer button{border-radius:4px 12px 4px 12px}
+#toast{border-radius:4px 14px 4px 14px;box-shadow:0 10px 35px #0008}
+@media(max-width:520px){
+ .hero{min-height:235px;background-position:center,60% 35%}
+ .stats{gap:8px}
+ .stats article{min-height:102px;padding:13px 11px}
+ .stats article:after{font-size:6px;letter-spacing:.06em}
+ .person{padding:10px;gap:8px}
+ .avatar{width:40px;height:40px;flex-basis:40px}
+ .pname small{font-size:10px}
+ .balance b{font-size:12px!important}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

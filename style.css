@@ -142,3 +142,10 @@ dialog::backdrop{background:#080309c9;backdrop-filter:blur(6px)}
  .balance b{font-size:12px!important}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Customer management controls */
+.list-tools{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+.list-tools #search{flex:1;min-width:0;margin:0}
+.list-tools select{flex:0 0 150px;width:150px;max-width:46%;border:1px solid #dec9cd;border-radius:10px;padding:12px;background:white;color:#281a1e;font:14px system-ui}
+.actions button.danger{background:#fff0f2;color:#a01835;border-color:#e5a5b4}
+@media(max-width:380px){.list-tools{align-items:stretch;flex-direction:column}.list-tools select{width:100%;max-width:none;flex-basis:auto}}

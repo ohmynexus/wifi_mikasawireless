@@ -149,3 +149,28 @@ dialog::backdrop{background:#080309c9;backdrop-filter:blur(6px)}
 .list-tools select{flex:0 0 150px;width:150px;max-width:46%;border:1px solid #dec9cd;border-radius:10px;padding:12px;background:white;color:#281a1e;font:14px system-ui}
 .actions button.danger{background:#fff0f2;color:#a01835;border-color:#e5a5b4}
 @media(max-width:380px){.list-tools{align-items:stretch;flex-direction:column}.list-tools select{width:100%;max-width:none;flex-basis:auto}}
+
+/* Dashboard graph refinement: keep existing theme */
+.chart{height:190px;gap:8px;padding:14px 0 8px;align-items:stretch;position:relative;background:repeating-linear-gradient(to bottom,transparent 0,transparent 35px,#d85c6e17 36px)}
+.month{min-width:0;gap:7px}.month .bar{height:118px;width:min(76%,44px);flex:0 0 118px;justify-content:flex-end;overflow:hidden}.month .bar i{min-height:0;border-radius:4px 4px 0 0;transition:height .25s}.month b{font-size:clamp(8px,2.5vw,11px);white-space:nowrap}.month small{font-size:10px}
+@media(max-width:390px){.chart{gap:4px}.month .bar{width:72%;}.month b{font-size:8px}}
+/* Readable per-debt payment cards */
+.debt-list{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0 24px}
+.debt-list button{display:flex;flex-direction:column;align-items:flex-start;gap:8px;width:100%;text-align:left;white-space:normal;background:linear-gradient(145deg,rgba(74,27,43,.92),rgba(28,15,23,.98));color:#fff1f4;border:1px solid #754052;border-radius:18px;padding:18px;line-height:1.5;box-shadow:0 5px 18px #0002}
+.debt-list button b{font-size:1.04rem;line-height:1.4;color:#fff}
+.debt-list button small{font-size:.92rem;color:#c6a8b2;overflow-wrap:anywhere}
+.debt-list button strong{font-size:1rem;color:#ffd18d;overflow-wrap:anywhere}
+.debt-list button:active{transform:scale(.99);border-color:#ff7398}
+@media(min-width:560px){.debt-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* v1.9.1: pembeda visual kartu pemasukan dan piutang; logika aplikasi tidak diubah */
+.stats article:nth-child(2){background:linear-gradient(135deg,#18351fef,#101710f5 75%),url("mikasa-art.jpg") center/cover;border-color:#5e9c68}
+.stats article:nth-child(2) b{color:#b8ff83}
+.stats article:nth-child(3){background:linear-gradient(135deg,#481322ef,#1b0c12f5 75%),url("mikasa-art.jpg") 80%/cover;border-color:#d64b65}
+.stats article:nth-child(3) b{color:#ff7188}
+.repayment-panel{margin:14px 0;padding:14px;border:1px solid #7f4054;border-radius:13px;background:linear-gradient(140deg,#35131f,#211219);color:#fff0f3}.repayment-head{display:flex;align-items:end;justify-content:space-between;gap:8px}.repayment-head small{display:block;color:#d7aab6;font-size:10px;letter-spacing:.1em}.repayment-head b{display:block;font-size:28px;color:#ff718b}.repayment-head span{font-size:10px;color:#c6a7b0;text-align:right}.repayment-track{height:13px;border-radius:12px;overflow:hidden;background:#572b39;margin:12px 0}.repayment-track i{display:block;height:100%;background:linear-gradient(90deg,#e83b62,#ff8ba1);border-radius:12px;box-shadow:0 0 12px #ef426466}.repayment-legend{display:grid;gap:8px;font-size:11px;color:#e8cbd2}.repayment-legend span{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.repayment-legend b{margin-left:auto;color:#fff}.dot{display:inline-block;width:8px;height:8px;border-radius:50%}.paid-dot{background:#ff6684}.remain-dot{background:#8b6a77}
+
+/* Highlight catatan/tagihan pada kartu utang agar cepat terlihat */
+.debt-list .debt-note{display:flex;flex-direction:column;align-items:flex-start;gap:5px;width:100%;box-sizing:border-box;margin:3px 0;padding:10px 12px;border:1px solid #ff9c66;border-left:4px solid #ffb35c;border-radius:10px;background:linear-gradient(100deg,rgba(117,54,27,.55),rgba(75,29,44,.72));color:#ffe0ad;overflow-wrap:anywhere}
+.debt-list .debt-note .note-label{font-size:.68rem;letter-spacing:.12em;font-weight:800;color:#ffc477}
+.debt-list .debt-note b{font-size:.94rem;line-height:1.45;color:#fff0ce;font-weight:650;overflow-wrap:anywhere}

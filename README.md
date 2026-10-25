@@ -47,9 +47,21 @@ Ini aplikasi lokal satu perangkat, bukan sinkronisasi cloud. Data dapat hilang b
 Paket ini disusun sebagai implementasi awal. Checklist di atas adalah prosedur pengujian, bukan klaim bahwa semua skenario sudah dieksekusi pada perangkat Android/Netlify. Review logika audit/restore dan uji perangkat nyata sebelum dijadikan sumber pembukuan utama.
 
 
-## Dashboard profesional — metrik piutang
-- **Total Tagihan Belum Lunas** menunjukkan nilai saldo utang berjalan (utang valid dikurangi pembayaran valid), sehingga turun setiap pembayaran masuk.
-- **Total Pendapatan** tetap merupakan akumulasi pembayaran valid.
-- **Pelanggan Belum Lunas** menghitung pelanggan aktif dengan saldo positif, bukan nominal rupiah.
-- **Pelanggan** tetap menunjukkan jumlah akun yang tersimpan.
-- Riwayat transaksi tetap dipertahankan; pembayaran tidak menghapus catatan tagihan lama.
+## v1.8 — Tagihan bulanan
+- Isi **Tarif WiFi per bulan** ketika mendaftarkan pelanggan. Nilai 0 mengecualikan pelanggan dari tagihan rutin.
+- Pilih periode pada panel **Tagihan Bulanan**, lalu pilih **Buat tagihan periode**.
+- Proses hanya memasukkan tagihan untuk pelanggan aktif dengan tarif > 0.
+- Setiap pelanggan hanya menerima satu tagihan rutin per periode; menekan tombol kembali tidak menggandakan tagihan periode yang sama.
+- Tagihan tercatat sebagai transaksi utang dan bisa dilunasi/cicil lewat alur pembayaran seperti biasa.
+- Proses ini dijalankan saat operator menekan tombol (bukan background otomatis), karena aplikasi lokal tidak berjalan ketika ditutup.
+- Untuk pelanggan lama, atur properti `monthlyFee` melalui proses pembaruan data/fitur edit pelanggan sebelum menghasilkan tagihan.
+
+
+## v1.8.4 — Kolom utang awal lebih praktis
+- Kolom jumlah utang awal dimulai kosong, tanpa angka 0.
+- Kolom boleh dibiarkan kosong; sistem memperlakukannya sebagai Rp0.
+- Isi nominal bila ingin mencatat utang awal saat mendaftarkan pelanggan.
+- Cache service worker dinaikkan agar perubahan dimuat.
+
+
+Versi 1.8.8: Total Tagihan sekarang berarti akumulasi seluruh utang/tagihan sah (tidak turun saat pembayaran). Sisa Piutang adalah total tagihan dikurangi pembayaran sah, dan turun setiap kali pembayaran dicatat. Riwayat, alokasi pelunasan per utang, arsip, hapus, backup, dan fitur lainnya dipertahankan.

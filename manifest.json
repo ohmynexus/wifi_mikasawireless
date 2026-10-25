@@ -1,0 +1,8 @@
+{
+  "name": "Buku Utang WiFi \u2014 Mikasa Field Ledger",
+  "short_name": "Buku Utang WiFi",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#10090e",
+  "theme_color": "#4b1024"
+}

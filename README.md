@@ -45,3 +45,11 @@ Ini aplikasi lokal satu perangkat, bukan sinkronisasi cloud. Data dapat hilang b
 
 ## Catatan validasi
 Paket ini disusun sebagai implementasi awal. Checklist di atas adalah prosedur pengujian, bukan klaim bahwa semua skenario sudah dieksekusi pada perangkat Android/Netlify. Review logika audit/restore dan uji perangkat nyata sebelum dijadikan sumber pembukuan utama.
+
+
+## Dashboard profesional — metrik piutang
+- **Total Tagihan Belum Lunas** menunjukkan nilai saldo utang berjalan (utang valid dikurangi pembayaran valid), sehingga turun setiap pembayaran masuk.
+- **Total Pendapatan** tetap merupakan akumulasi pembayaran valid.
+- **Pelanggan Belum Lunas** menghitung pelanggan aktif dengan saldo positif, bukan nominal rupiah.
+- **Pelanggan** tetap menunjukkan jumlah akun yang tersimpan.
+- Riwayat transaksi tetap dipertahankan; pembayaran tidak menghapus catatan tagihan lama.
